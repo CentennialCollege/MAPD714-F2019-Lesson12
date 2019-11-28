@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91E0BC1238F62FC00951369 /* FontListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E0BC0238F62FC00951369 /* FontListTableViewController.swift */; };
 		E9F4F297238F3F91001F0BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4F296238F3F91001F0BF8 /* AppDelegate.swift */; };
 		E9F4F299238F3F91001F0BF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4F298238F3F91001F0BF8 /* SceneDelegate.swift */; };
-		E9F4F29B238F3F91001F0BF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4F29A238F3F91001F0BF8 /* ViewController.swift */; };
+		E9F4F29B238F3F91001F0BF8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4F29A238F3F91001F0BF8 /* RootViewController.swift */; };
 		E9F4F29E238F3F91001F0BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F4F29C238F3F91001F0BF8 /* Main.storyboard */; };
 		E9F4F2A0238F3F94001F0BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F4F29F238F3F94001F0BF8 /* Assets.xcassets */; };
 		E9F4F2A3238F3F94001F0BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F4F2A1238F3F94001F0BF8 /* LaunchScreen.storyboard */; };
+		E9F4F2AB238F4BA3001F0BF8 /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4F2AA238F4BA3001F0BF8 /* FavouritesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E91E0BC0238F62FC00951369 /* FontListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListTableViewController.swift; sourceTree = "<group>"; };
 		E9F4F293238F3F91001F0BF8 /* MAPD714-F2019-Lesson12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714-F2019-Lesson12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4F296238F3F91001F0BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F4F298238F3F91001F0BF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9F4F29A238F3F91001F0BF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9F4F29A238F3F91001F0BF8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E9F4F29D238F3F91001F0BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F4F29F238F3F94001F0BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F4F2A2238F3F94001F0BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F4F2A4238F3F94001F0BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F4F2AA238F4BA3001F0BF8 /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				E9F4F296238F3F91001F0BF8 /* AppDelegate.swift */,
 				E9F4F298238F3F91001F0BF8 /* SceneDelegate.swift */,
-				E9F4F29A238F3F91001F0BF8 /* ViewController.swift */,
+				E9F4F29A238F3F91001F0BF8 /* RootViewController.swift */,
 				E9F4F29C238F3F91001F0BF8 /* Main.storyboard */,
 				E9F4F29F238F3F94001F0BF8 /* Assets.xcassets */,
 				E9F4F2A1238F3F94001F0BF8 /* LaunchScreen.storyboard */,
 				E9F4F2A4238F3F94001F0BF8 /* Info.plist */,
+				E9F4F2AA238F4BA3001F0BF8 /* FavouritesList.swift */,
+				E91E0BC0238F62FC00951369 /* FontListTableViewController.swift */,
 			);
 			path = "MAPD714-F2019-Lesson12";
 			sourceTree = "<group>";
@@ -99,6 +105,7 @@
 				TargetAttributes = {
 					E9F4F292238F3F91001F0BF8 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -138,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F4F29B238F3F91001F0BF8 /* ViewController.swift in Sources */,
+				E91E0BC1238F62FC00951369 /* FontListTableViewController.swift in Sources */,
+				E9F4F29B238F3F91001F0BF8 /* RootViewController.swift in Sources */,
 				E9F4F297238F3F91001F0BF8 /* AppDelegate.swift in Sources */,
 				E9F4F299238F3F91001F0BF8 /* SceneDelegate.swift in Sources */,
+				E9F4F2AB238F4BA3001F0BF8 /* FavouritesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +231,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Debug;
 		};
@@ -275,7 +286,9 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -284,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = "MAPD714-F2019-Lesson12/Info.plist";
@@ -293,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-F2019-Lesson12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = "MAPD714-F2019-Lesson12/Info.plist";
